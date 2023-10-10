@@ -25,5 +25,5 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - uses: actions/setup-java@v3
-        - name: Test API
+        - name: Test API 1
           run: mvn clean verify
