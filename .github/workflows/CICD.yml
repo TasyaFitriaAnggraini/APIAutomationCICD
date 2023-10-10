@@ -24,6 +24,6 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-java@v3
+      - uses: actions/checkout@v3
       - name: Test API Baru
         run: mvn clean verify
