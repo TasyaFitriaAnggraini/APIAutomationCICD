@@ -20,10 +20,10 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
   test:
-    - name: Test API Automation CICD
-      needs: build
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/setup-java@v3
-        - name: Test API 1
-          run: mvn clean verify
+    name: Test API Automation CICD
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-java@v3
+      - name: Test API I
+        run: mvn clean verify
